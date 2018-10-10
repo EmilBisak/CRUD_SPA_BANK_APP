@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="jumbotron text-center">
+      <h2>Bank App</h2>
+      <button id="accBtn" class="btn btn-primary">Account</button>
+      <button id="addBtn" class="btn btn-info">Add Account</button>
+      <button id="editBtn" class="btn btn-warning">Edit Account</button>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row main-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Accounts</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit card</th>
+                </tr>
+              </thead>
+              <tbody id="mainTbody">
+                <!-- <tr>
+  <td >1</td>
+  <td >Danilo</td>
+  <td >11000</td>
+  <td >Visa</td>
+</tr>
+<tr>
+  <td >2</td>
+  <td >Ivana</td>
+  <td >3000</td>
+  <td >Master</td>
+</tr>
+<tr>
+  <td >3</td>
+  <td >Ana</td>
+  <td >5700</td>
+  <td >Visa</td>
+</tr>
+<tr>
+  <td >4</td>
+  <td >Petar</td>
+  <td >13000</td>
+  <td >Master</td>
+</tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row form-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Add Account</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input id="idForm" type="text" placeholder="id" class="form-control"><br>
+            <input id="nameForm" type="text" placeholder="name" class="form-control"><br>
+            <input id="depositForm" type="text" placeholder="deposit" class="form-control"><br>
+            <input id="cCardForm" type="text" placeholder="credit card" class="form-control"><br>
+            <button id="addFormBtn" class="btn btn-primary form-control">Add Acount</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row editRow">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Edit/Delete</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit card</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="editTbody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row editFormRow">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Edit Account</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input id="editId" type="text" class="form-control"><br>
+            <input id="editName" type="text" class="form-control"><br>
+            <input id="editDeposit" type="text" class="form-control"><br>
+            <input id="editCcard" type="text" class="form-control"><br>
+            <button id="save" class="btn btn-warning form-control">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
